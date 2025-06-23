@@ -23,6 +23,13 @@ pipeline {
             }
         }
 
+        stage('Deploy') {
+            steps {
+                echo 'Bugfix deployed!'
+                // Add your deploy steps here
+            }
+        }
+
         
     }
 
