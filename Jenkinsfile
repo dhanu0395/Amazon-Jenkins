@@ -22,7 +22,13 @@ pipeline {
                  sh 'mvn clean install'
             }
         }
-
+        
+          stage('Deploy') {
+            steps {
+                echo 'Deploying from feature-branch-1...'
+                // Add your deploy steps here
+            }
+        }
         
     }
 
