@@ -22,8 +22,12 @@ pipeline {
                  sh 'mvn clean install'
             }
         }
-
-        
+	
+	 stage('Deploy') {
+            steps {
+                echo 'Deploying release-branch-3...'
+            }
+        }
     }
 
   post{
