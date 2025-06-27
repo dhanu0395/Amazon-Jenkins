@@ -22,6 +22,14 @@ pipeline {
                  sh 'mvn clean install'
             }
         }
+        
+        stage('deploy'){
+           steps{
+               echo 'deploy from pr branch-6 using webhook'
+               echo 'Added line for testing webhook'
+            }
+        }      
+
 
         
     }
