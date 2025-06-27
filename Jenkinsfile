@@ -22,6 +22,13 @@ pipeline {
                  sh 'mvn clean install'
             }
         }
+        
+        stage('deploy'){
+           steps{
+               echo 'Running deploy from pr branch-6"
+            }
+        }      
+
 
         
     }
