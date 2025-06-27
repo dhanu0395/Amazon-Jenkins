@@ -25,7 +25,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                echo 'Bugfix deployed!'
+                echo 'Bugfix deployed! for webhook testing'
                 // Add your deploy steps here
             }
         }
