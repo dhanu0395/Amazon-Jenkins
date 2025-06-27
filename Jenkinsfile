@@ -25,7 +25,7 @@ pipeline {
         
         stage('deploy'){
            steps{
-               echo 'Running deploy from pr branch-6'
+               echo 'deploy from pr branch-6 using webhook'
             }
         }      
 
