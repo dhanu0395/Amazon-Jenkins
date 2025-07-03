@@ -8,7 +8,7 @@ pipeline {
 
         stage('pull scm') {
             steps {
-                git branch: 'bugfix-branch-2', url: 'https://github.com/PraveenKuber/Amazon-Jenkins.git'
+                git branch: 'bugfix-branch-2', url: 'https://github.com/dhanu0395/Amazon-Jenkins.git'
             }
         }
         stage('compile') {
