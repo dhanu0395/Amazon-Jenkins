@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label 'linux_slave'
+    }
     environment {
         // Use PATH+EXTRA to append to PATH properly
         PATH = "/usr/bin:/bin:/opt/homebrew/bin"
@@ -8,7 +10,7 @@ pipeline {
 
         stage('pull scm') {
             steps {
-                git branch: 'main', url: 'https://github.com/dhanu0395/Amazon-Jenkins.git'
+                git branch: 'deploy-branch-4', url: 'https://github.com/dhanu0395/Amazon-Jenkins.git'
             }
         }
         stage('compile') {
