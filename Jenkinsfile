@@ -5,10 +5,7 @@ pipeline {
     tools{
         maven 'maven 3.6.0'
     }
-    environment {
-        // Use PATH+EXTRA to append to PATH properly
-        PATH = "/usr/bin:/bin:/opt/homebrew/bin"
-    }
+
     stages {
 
         stage('pull scm') {
